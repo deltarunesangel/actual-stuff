@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="splashdown.css">
+     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+     <meta name="author" content="Violet Cole">
+    <title>Welcome to the Website (not quite yet!)</title>
+    <style>
+        body, html {
+            background-color: black;
+            padding: 20px;
+            color: white;
+        }
+        h1, h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+        }
+        body{
+    background-image:url("https://codehs.com/uploads/ee2357eb9cce97ee12ebecd7d13b896c");
+    background-attachment: fixed;
+    color:ivory;
+    font-family:'Courier New', Courier, monospace;
+}
+article{
+    margin:5%;
+    background-color:rgba(128,128,128,0.5);
+    line-height:200%;
+    padding:8px 8px 8px 8px;
+}
+/* removes all default link styling */
+a:link, a:active{
+    margin:2em;
+    color:white;
+    font-size:16px;
+}
+a:visited{
+    margin:2em;
+    color:deeppink;
+    font-size:16px;
+}
+a:hover{
+    margin:2em;
+    color:red;
+    font-size:16px;
+    
+}
+h1{
+    text-align:center;
+}
+/* adds a black background color to the top navigation */
+.topnav {
+  background-color: #150b6e;
+  overflow: hidden;
+}
+
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 1.0);
+}
+/* style the links inside the navi bar!!! */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
+.nav-link.active {
+  background-color: black; /* highlight color for active page yesiree it finally works */
+  color:white;
+}
+
+/* change the color of links on hover so it looks cooler */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+   box-shadow: 8px 8px 20px rgba(0, 0, 0, 1.0);
+    transition: background-color 0.8s, color 0.8s ease;
+    transform: scale(1.3) ease;
+}
+
+/* add a new color to the active or current link! */
+.topnav a:active {
+  background-color: darkblue;
+  color: white;
+}
+/*at long, long last it works. thanks be to God!*/
+.flexcontainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+.background-video {
+            position: absolute;
+            top: 0;
+            left: 0; 
+            opacity: 0; /* I went a little overboard hiding this thing */
+            z-index: -1;
+            pointer-events: none;
+        }
+        </style>
+</head>
+<body>
+    <div id = "the-whole-hog">
+    <div id="stars-above">
+    <h1>Welcome to the Website (sort of)</h1>
+    <hr width = 10%>
+    <article>
+    <h3 style="text-align: center">So you want to see my portfolio? Answer this simple question and you can go right ahead! What is the answer to <em>life</em>, the <em>universe</em>, and <em>everything</em>?</h3>
+    </article>
+    <div class="very-secret-password">
+        <input type="text" id="code-input" style = "width:300px;" placeholder="Enter the password to continue...">
+        <button id="submit-button">Submit</button>
+    </div>
+    <div class="orb-thingie"></div>
+   <div class="orb-thingie2">  </div>
+   <div class="orb-thingie3">  </div>
+   </div>
+   </div>
+   <!-- beginning of actual portfolio -->
+   <div id="portfolio" style="display: none;">
+    <iframe class="background-video"
+            id="please-work"  
+            src=""
+            allow="autoplay; encrypted-media">
+    </iframe>
+    <div class="topnav">
+  <a href="index.html" class="nav-link active">Home</a>
+  <a href="projects.html" class="nav-link">Projects</a>
+  <a href="aspirations.html" class="nav-link">Aspirations</a>
+  <a href="aboutme.html" class="nav-link">About</a>
+        </div>
+    <h1>And So It Begins...</h1> <! commenting is fun hehe I love leaving little secrets for people using the inspect tool to find :P >
+    <hr width = 10%> <! I always used to love putting random tiny lines in my code. here we go again. :D>
+    <!-- <marquee direction="left" behavior="scroll" scrollamount="22">you should really click, just saying</marquee> -->
+    <div class="section" id="section3">
+        
+        <article><h2>My Favorite Things!</h2>
+      
+        <ul>
+           <li><strong><em>My family</em></strong></li> 
+            <li>My friends</li>
+            <li>The Holy Trinity</li>
+            <li>Deltarune</li>
+            <li>Quantum physics</li>
+            <li>Cosmology</li>
+            <li>HTML/CSS</li>
+            <li>Lovecraftian/cosmic horror </li>
+            <li>Tiny lines under words</li>
+            <li>Deltarune</li>
+            <li>Swimming</li>
+            <li>Making food for my family</li>
+            <li>Techno/electropop music</li>
+            <li>Death in Paradise</li>
+            <li>Musical theater</li>
+            <li>Deltarune</li>
+            <li>The Walten Files & The Backrooms & Gemini Home Entertainment & Local 58 & Vita Carnis</li>
+            <li>Pluto (which <em>is</em> a planet)</li>
+            <li>Undertale and Gravity Falls</li>
+            <li>The original Dune</li>
+            <li>Raindrops on roses</li>
+            <li>Whiskers on kittens</li>
+            <li>This beautiful piece of art I coded for freshman Computer Science</li>
+        </ul>
+    <iframe src="https://openprocessing.org/sketch/2733991/embed/?plusEmbedHash=ab2a0be9&userID=541953&plusEmbedTitle=true&show=sketch" width="400" height="400" title="Truest beauty." align="center"></iframe>
+        </div>
+        </article>
+        </div>
+</body>
+    
+    <script src="irritating.js"></script>
+</html>
