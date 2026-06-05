@@ -1,0 +1,73 @@
+/* css for the beginning screen. this should look pretty cool. */
+@keyframes whee{
+    0% {transform: translate(0px, 0px);}
+    50% {transform: translate(250px, -220px);}
+    100% {transform: translate(400px, 0px);}
+}
+.orb-thingie{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    filter: blur(150px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+   transform: translate(-50%, -50%);
+    background-color:rgb(49, 0, 135);
+    animation: whee 4s infinite alternate ease-in-out;
+}
+.orb-thingie2{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    filter: blur(125px);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: -1;
+   transform: translate(-50%, -50%);
+    background-color:rgb(49, 0, 135);
+    animation: whee 3s infinite alternate ease-in-out;
+}
+.orb-thingie3{
+    width:350px;
+    height:350px;
+    border-radius: 50%;
+    filter: blur(150px);
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    z-index: -1;
+   transform: translate(-50%, -50%);
+    background-color:rgb(49, 0, 135);
+    animation: whee 10s infinite alternate ease-in-out;
+}
+#stars-above{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+#the-whole-hog{
+    opacity:1;
+    transition: opacity 1s ease-in-out;
+}
+#portfolio{
+    opacity:0;
+    transition: opacity 1s ease-in-out;
+}
+.fade-out {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+.fade-in {
+    opacity: 1 !important;
+}
