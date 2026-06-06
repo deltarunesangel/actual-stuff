@@ -24,6 +24,7 @@ submitButton.addEventListener('click', function() {
         }, 10); // Delay to allow the fade-out animation to start
         setTimeout(function() {
         beginning.style.display = "none";
+        alert("you did it! now, prepare to be amazed by the wonders of my portfolio! (also, if you want to see the code and comments for this website, just inspect element and have fun exploring :P)");
         }, 1000); // Match the duration of the fade-out animation
     }
     else{
