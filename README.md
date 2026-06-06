@@ -6,4 +6,4 @@ This is a WORK-IN-PROGRESS! Be warned: if you try and click on any of the navi l
 
 Thanks for your interest in the project. I have never written a readme before, so... I hope this is right? But despite all that, I hope you enjoy the portfolio!
 Good luck on your own projects, and I hope you enjoy mine.
-Violet (aka the one who made it)
+Love, Violet (aka the one who made it)
