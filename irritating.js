@@ -3,8 +3,8 @@ let sanctuary = false;
 const submitButton = document.getElementById("submit-button");
 const codeInput = document.getElementById("code-input");
 const beginning = document.getElementById("the-whole-hog");
-const portfolio = document.getElementById("portfolio");
 const musica = document.getElementById("please-work");
+const portfolio = document.getElementById("portfolio");
 const homebtn = document.getElementById("home");
 const aboutbtn = document.getElementById("about");
 const projectsbtn = document.getElementById("projects");
@@ -32,7 +32,7 @@ const commentsStream = document.getElementById("comments-stream");
 submitButton.addEventListener('click', function () {
     if (codeInput.value === "42") {
         console.log("welcome to the sanctuary, you may now enjoy the fruits of your labor :)");
-        musica.src = "https://www.youtube.com/embed/QQQq1T06lYg?autoplay=1&loop=1&playlist=QQQq1T06lYg";
+        musica.src = "https://www.youtube.com/embed/QQQq1T06lYg?enablejsapi=1&autoplay=1&loop=1&playlist=QQQq1T06lYg";
         sanctuary = true;
         portfolio.style.display = "block";
         setTimeout(function () {
@@ -51,13 +51,21 @@ submitButton.addEventListener('click', function () {
 
 
 });
+function vibin(videoId){
+    musica.contentWindow.postMessage(JSON.stringify({
+        event:'command',
+        func: 'loadVideoById',
+        args:[videoId]
+    }), '*');
+}
 homebtn.addEventListener('click', function () {
     homevis.style.display = "block"
     aboutvis.style.display = "none"
     projectsvis.style.display = "none"
     aspvis.style.display = "none"
     guestbookvis.style.display = "none"
-    musica.src = "https://www.youtube.com/embed/QQQq1T06lYg?autoplay=1&loop=1&playlist=QQQq1T06lYg";
+    vibin("QQQq1T06lYg")
+    //musica.src = "https://www.youtube.com/embed/QQQq1T06lYg?enablejsapi=1&autoplay=1&loop=1&playlist=QQQq1T06lYg";
 })
 aboutbtn.addEventListener('click', function () {
     homevis.style.display = "none"
@@ -65,7 +73,8 @@ aboutbtn.addEventListener('click', function () {
     projectsvis.style.display = "none"
     aspvis.style.display = "none"
     guestbookvis.style.display = "none"
-    musica.src = "https://www.youtube.com/embed/j6baKyF2Ksc?autoplay=1&loop=1&playlist=j6baKyF2Ksc";
+    vibin("j6baKyF2Ksc")
+    //musica.src = "https://www.youtube.com/embed/j6baKyF2Ksc?enablejsapi=1&autoplay=1&loop=1&playlist=j6baKyF2Ksc";
 })
 projectsbtn.addEventListener('click', function () {
     homevis.style.display = "none"
@@ -73,7 +82,8 @@ projectsbtn.addEventListener('click', function () {
     projectsvis.style.display = "block"
     aspvis.style.display = "none"
     guestbookvis.style.display = "none"
-    musica.src = "https://www.youtube.com/embed/xz61v-lss5g?autoplay=1&loop=1&playlist=xz61v-lss5g";
+    vibin("xz61v-lss5g")
+    //musica.src = "https://www.youtube.com/embed/xz61v-lss5g?enablejsapi=1&autoplay=1&loop=1&playlist=xz61v-lss5g";
 })
 aspbtn.addEventListener('click', function () {
     homevis.style.display = "none"
@@ -81,7 +91,8 @@ aspbtn.addEventListener('click', function () {
     projectsvis.style.display = "none"
     aspvis.style.display = "block"
     guestbookvis.style.display = "none"
-    musica.src = "https://www.youtube.com/embed/z9e2_xxi6q4?autoplay=1&loop=1&playlist=z9e2_xxi6q4";
+    vibin("z9e2_xxi6q4")
+    //musica.src = "https://www.youtube.com/embed/z9e2_xxi6q4?enablejsapi=1&autoplay=1&loop=1&playlist=z9e2_xxi6q4";
 })
 guestbookbtn.addEventListener('click', function () {
     homevis.style.display = "none"
@@ -89,7 +100,8 @@ guestbookbtn.addEventListener('click', function () {
     projectsvis.style.display = "none"
     aspvis.style.display = "none"
     guestbookvis.style.display = "block"
-    musica.src = "https://www.youtube.com/embed/4s0VBDxeEXY?autoplay=1&loop=1&playlist=4s0VBDxeEXY";
+    vibin("4s0VBDxeEXY")
+    //musica.src = "https://www.youtube.com/embed/4s0VBDxeEXY?enablejsapi=1&autoplay=1&loop=1&playlist=4s0VBDxeEXY";
 })
 async function fetchComments() {
     const { data, error } = await yipee
